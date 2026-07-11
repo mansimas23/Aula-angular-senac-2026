@@ -18,3 +18,11 @@ vlidade: 12 meses
     </li>
 </ul>
 <button class="btn btn-primary">Comprar</button>
+<a routerLink="/epi/detalhe" class="btn btn-sm btn-primary">
+Ver detalhes
+  </a>
+    <a [routerLink]="['/epi/detalhe']" [queryParams]="{ id: 1 }" class="btn btn-sm btn-primary ms-2 mt-2">
+    Enviar ID
+     </a>
+    
+    
