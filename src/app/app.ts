@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet, RouterModule } from '@angular/router';
 import { EpiList } from './epi/epi-list/epi-list';
 import { EpiDetalhe } from './epi/epi-detalhe/epi-detalhe';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, EpiList, EpiDetalhe, RouterModule],
+  imports: [RouterOutlet, EpiList, EpiDetalhe, RouterModule, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
